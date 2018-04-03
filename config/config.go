@@ -5,10 +5,14 @@ package config
 
 import "time"
 
+// Config nifibeat
 type Config struct {
+	URL    string        `config:"url"`
 	Period time.Duration `config:"period"`
 }
 
+// DefaultConfig nifibeat default
 var DefaultConfig = Config{
-	Period: 1 * time.Second,
+	URL:    "",
+	Period: 60 * time.Second,
 }
