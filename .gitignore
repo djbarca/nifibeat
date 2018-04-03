@@ -5,5 +5,4 @@
 /nifibeat
 /nifibeat.test
 *.pyc
-vendor/
 logs/
