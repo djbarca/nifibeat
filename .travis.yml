@@ -37,6 +37,7 @@ install:
 
 script:
   - ls -l
+  - cat Makefile
   - make $TARGETS
 
 after_success:
