@@ -33,13 +33,12 @@ before_install:
   - rsync -az ${TRAVIS_BUILD_DIR}/ $HOME/gopath/src/github.com/sigrist/nifibeat/
   - export TRAVIS_BUILD_DIR=$HOME/gopath/src/github.com/sigrist/nifibeat/
   - cd $HOME/gopath/src/github.com/sigrist/nifibeat/
-  - pwd
-  - ls -l
 
 install:
   - true
 
 script:
+  - ls -l
   - make $TARGETS
 
 after_success:
