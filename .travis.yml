@@ -13,7 +13,7 @@ os:
 
 env:
   matrix:
-    - TARGETS="package"
+    - TARGETS="setup check"
 
   global:
     # Cross-compile for amd64 only to speed up testing.
